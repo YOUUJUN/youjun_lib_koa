@@ -36,24 +36,14 @@ app.use( async (ctx, next) =>{
 
 
 
-
 router(app);
 
-
-// 前端(vue)路由
-// 所有 navigate 请求重定向到 '/index.html'，配合底下的 koaStatic，实际位置位于 vue-dist/index.html
-// app.use(history({
-//   htmlAcceptHeaders: ['text/html'],
-//   index: '/index.html'
-// }));
-
-app.use(require('koa-static')(__dirname + '/public'));
 app.use(require('koa-static')(__dirname + '/vue-dist'));
 
 //添加ejs模板并修改模板后缀为html
-app.use(views(__dirname + '/views', {
-  map : {html:'ejs'}
-}));
+// app.use(views(__dirname + '/vue-dist', {
+//   map : {html:'ejs'}
+// }));
 
 
 

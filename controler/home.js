@@ -5,19 +5,28 @@ const workspaces = require("./../utils/workspace_manager/workspace");
 const fsPromises = require('fs').promises;
 
 const util = require("util");
-const execFile = util.promisify(require("child_process").execFile);
+// const execFile = util.promisify(require("child_process").execFile);
 
 module.exports = {
     index : async (ctx,next) =>{
-        const username = ctx.cookies.get("username");
+        // const username = ctx.cookies.get("username");
+        //
+        // const ifExist = await workspaces.checkWorkSpaceByUser(username);
+        //
+        //
+        // if(!ifExist){
+        //     let workName = workspaces.workspaceNameGenerator(username);
+        //     let userPath = await workspaces.createWorkSpace("F:\\learn_git_koa\\public\\source",workName);
+        // }
+        //
 
-        const ifExist = await workspaces.checkWorkSpaceByUser(username);
+        // await next();
 
+        let requestBody = ctx.request.ip;
+        let responseBody = ctx.response;
+        let nodeRequestBody = ctx.req;
 
-        if(!ifExist){
-            let workName = workspaces.workspaceNameGenerator(username);
-            let userPath = await workspaces.createWorkSpace("F:\\learn_git_koa\\public\\source",workName);
-        }
+        ctx.url = './home.html';
 
         await next();
     },

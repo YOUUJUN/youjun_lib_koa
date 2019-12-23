@@ -1,9 +1,0 @@
-{
-  "name": "learn_git_koa",
-  "script": "./bin/www",
-  "cwd": "./",
-  "watch": true,
-  "ignore_watch": [
-    "public"
-  ]
-}

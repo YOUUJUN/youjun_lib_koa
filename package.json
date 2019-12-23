@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pm2 start pm2_dev.json",
-    "prd": "pm2 start pm2_prd.json",
+    "dev": "pm2 start ecosystem.config.js",
+    "prd": "pm2 start ecosystem.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -19,8 +19,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.0",
-    "koa2-history-api-fallback": "^0.1.0",
-    "pm2": "^4.2.0"
+    "koa2-history-api-fallback": "^0.1.0"
   },
   "devDependencies": {
     "koa-onerror": "^4.1.0"
