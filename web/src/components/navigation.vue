@@ -1,25 +1,19 @@
 <template>
 
-    <div class="main-navigation">
+    <nav class="main-navigation">
 
-        <div class="view-container">
+        <div class="view-container navigation-container">
 
             <div class="view-area cols24">
 
                 <div class="logo">
                     <img id="logo" src="../assets/images/logo.png" style=""  />
 
-                    <div id="hamburger" onclick="trans()">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
-
                 </div>
 
 
 
-                <div id="main-menu" class="collapse navbar-collapse">
+                <div id="main-menu">
                     <ul class="menu">
                         <!--<li><a href="/">首页</a><span></span></li>-->
                         <!--<li><a href="/about">关于我们</a><span></span></li>-->
@@ -40,14 +34,11 @@
                 </div>
 
 
-
-                <%if(logPanel){%>
                 <div class="user-logger">
 
 
                     <ul class="user-box">
-                        <li>
-                            <%if(msg.logged == true){%>
+                        <!--<li>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起
                                     <span class="caret"></span>
@@ -56,53 +47,47 @@
                                     <li><a href="/editor">分享经验</a></li>
                                     <li><a href="#">发起问题</a></li>
                                     <li><a href="#">Bug反馈</a></li>
-                                    <%if(msg.ifAdmin){%>
                                     <li><a href="/editor/document">编写文档</a></li>
-                                    <%}%>
                                 </ul>
                             </div>
-                            <%}%>
 
-                        </li>
+                        </li>-->
 
                         <li>
                             <a id="selectMenu" href="javascript:void(0);" onclick="doAsk(userMenu);">
-                                <%if(msg.logged == false){%>
                                 <i class="fa fa-user-circle resize"></i>
                                 <span class="log-btn">登录/注册</span>
-                                <%}%>
 
-                                <%if(msg.logged == true){%>
-                                <img class="header-portrait" src="<%- msg.userData.portrait %>">
-                                <span class="log-btn"></span>
-                                <%}%>
+                                <!--<img class="header-portrait" src="<%- msg.userData.portrait %>">
+                                <span class="log-btn"></span>-->
                             </a>
-                            <%if(msg.logged == true){%>
                             <dl class="select-board board-closed">
                                 <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>
                                 <dd><a onclick="users.logout();">退出登录</a></dd>
                             </dl>
-                            <%}%>
                         </li>
                     </ul>
 
 
                 </div>
-                <%}else{%>
-                <%}%>
+
+
 
 
             </div>
 
         </div>
 
-    </div>
+    </nav>
 
 </template>
 
 <script>
     export default {
-        name: "navigation"
+        name: "navigation",
+        methods : {
+
+        }
     }
 </script>
 
@@ -135,6 +120,11 @@
         border-top:1px solid #2188b6;
         border-bottom:2px solid #2188b6;
         background-color: #2188b6;
+    }
+
+    .navigation-container{
+        width :1170px;
+        margin:0 auto;
     }
 
     .navbar-header i{
@@ -206,73 +196,6 @@
         left:50%;
     }
 
-    /*-----汉堡---------*/
-    #hamburger{
-        display:none;
-        float: right;
-        width:50px;
-        line-height: 50px;
-        padding-top: 10px;
-    }
-
-    #hamburger:hover{
-        cursor:pointer;
-        background-color:transparent;
-    }
-
-    #hamburger:hover > .line{
-        background-color:#E04343;
-    }
-
-    #hamburger .line{
-        width: 35px;
-        height: 5px;
-        background-color: rgba(0,0,0,0.4);
-        display: block;
-        margin: 8px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-    }
-
-
-    #hamburger.is-active{
-        -webkit-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        -webkit-transition-delay: 0.6s;
-        -o-transition-delay: 0.6s;
-        transition-delay: 0.6s;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    #hamburger.is-active .line:nth-child(2){
-        width: 0;
-    }
-
-    #hamburger.is-active .line:nth-child(1),
-    #hamburger.is-active .line:nth-child(3){
-        -webkit-transition-delay: 0.3s;
-        -o-transition-delay: 0.3s;
-        transition-delay: 0.3s;
-    }
-
-    #hamburger.is-active .line:nth-child(1){
-        -webkit-transform: translateY(13px);
-        -ms-transform: translateY(13px);
-        -o-transform: translateY(13px);
-        transform: translateY(13px);
-    }
-
-    #hamburger.is-active .line:nth-child(3){
-        -webkit-transform: translateY(-13px) rotate(90deg);
-        -ms-transform: translateY(-13px) rotate(90deg);
-        -o-transform: translateY(-13px) rotate(90deg);
-        transform: translateY(-13px) rotate(90deg);
-    }
 
 
 
@@ -307,6 +230,7 @@
     .user-logger .resize{
         font-size: 35px;
         color: #fff;
+        margin-right: 8px;
     }
 
     .user-logger .log-btn{
@@ -338,53 +262,6 @@
     }
 
 
-    @media screen and (max-width:768px){
-
-        #hamburger{
-            display: block;
-        }
-
-        .user-logger{
-            display: none;
-        }
-
-        #main-menu{
-            position: absolute;
-            left:0;
-            right:0;
-            background-color: #2188b6;
-            width:100%;
-            margin:0;
-            z-index: 1000;
-        }
-
-        .menu li{
-            display:block;
-        }
-
-        .logo{
-            overflow: hidden;
-            float:none;
-        }
-
-        .main-navigation {
-            margin: 0;
-        }
-
-        .nav-log{
-            display: inline-block !important;
-        }
-
-        .icon{
-            margin-top:15px;
-        }
-
-        .reWidth{
-            width: auto;
-        }
-
-
-    }
 
 
 </style>
