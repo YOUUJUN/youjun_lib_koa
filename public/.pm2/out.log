@@ -125,3 +125,13 @@ hello
   --> GET /js/chunk-2d9369ba.79b91028.js 200 37ms 635b
   <-- GET /js/chunk-2d9369ba.79b91028.js
   --> GET /js/chunk-2d9369ba.79b91028.js 200 4ms 635b
+  <-- GET /
+  --> GET / 200 357ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  --> GET /js/chunk-vendors.430c8d81.js 200 16ms 115.44kb
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/home.ccfc5854.js 200 16ms 3.29kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 9ms 635b
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 5ms 635b
