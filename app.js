@@ -22,7 +22,7 @@ app.use(logger());
 
 app.use( async (ctx, next) =>{
   ctx.set("Access-Control-Allow-Origin","http://localhost:8080");
-  // ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   // ctx.set("Access-Control-Allow-Credentials", true);
   await next();
 });

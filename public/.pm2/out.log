@@ -135,3 +135,134 @@ hello
   --> GET /js/chunk-2d9369ba.79b91028.js 200 9ms 635b
   <-- GET /js/chunk-2d9369ba.79b91028.js
   --> GET /js/chunk-2d9369ba.79b91028.js 200 5ms 635b
+  <-- GET /
+  --> GET / 200 102ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/chunk-vendors.430c8d81.js 200 21ms 115.44kb
+  --> GET /js/home.ccfc5854.js 200 26ms 3.29kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 5ms 635b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 17ms 59.28kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 3ms 635b
+  <-- GET /
+  --> GET / 200 110ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/home.ccfc5854.js 200 41ms 3.29kb
+  --> GET /js/chunk-vendors.430c8d81.js 200 54ms 115.44kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 6ms 635b
+  <-- GET /favicon.ico
+  -x- GET /favicon.ico 200 16ms 59.28kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 4ms 635b
+  <-- GET /
+  --> GET / 200 3ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/home.ccfc5854.js 200 7ms 3.29kb
+  --> GET /js/chunk-vendors.430c8d81.js 200 9ms 115.44kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 4ms 635b
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 4ms 635b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 10ms 0b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 6ms 0b
+  <-- POST /register
+body {
+  request: {
+    method: 'POST',
+    url: '/register',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      referer: 'http://localhost:8080/community.html',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '70',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/register',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+  --> POST /register 404 6ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 8ms 0b
+  <-- POST /register
+body {
+  request: {
+    method: 'POST',
+    url: '/register',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      referer: 'http://localhost:8080/community.html',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '70',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/register',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+  --> POST /register 200 6ms 972b
+  <-- GET /
+  --> GET / 200 90ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/home.ccfc5854.js 200 17ms 3.29kb
+  --> GET /js/chunk-vendors.430c8d81.js 200 36ms 115.44kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 101ms 635b
+  <-- GET /
+  --> GET / 200 17ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/chunk-vendors.430c8d81.js 200 38ms 115.44kb
+  --> GET /js/home.ccfc5854.js 200 42ms 3.29kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 20ms 635b
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 7ms 635b

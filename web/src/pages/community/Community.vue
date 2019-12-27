@@ -397,10 +397,10 @@
 </style>
 
 <script>
-    const navigation = () => import("../../components/navigation.vue");
+    const navigation = () => import("../../components/Navigation.vue");
     export default {
         components: { navigation },
-        data() {
+        data () {
             return {
                 name: 'Demi'
             };

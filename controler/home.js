@@ -31,8 +31,13 @@ module.exports = {
         await next();
     },
 
-    getFile : async (ctx,next) => {
-        console.log("ctx",ctx);
-        ctx.body = {msg:"msg"};
+    // register (ctx) {
+    //     console.log("body",ctx);
+    //     // ctx.body = ctx;
+    // }
+
+    register : async(ctx,next) => {
+        console.log("body",ctx);
+        ctx.body = ctx;
     }
 };

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-axios.create({
+let $axios = axios.create({
     baseURL : "http://localhost:3000"
 });
 
-export default axios;
+export default $axios;

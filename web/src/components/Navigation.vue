@@ -1,9 +1,7 @@
 <template>
 
     <nav class="main-navigation">
-
         <div class="view-container navigation-container">
-
             <div class="view-area cols24">
 
                 <div class="logo">
@@ -54,17 +52,17 @@
                         </li>-->
 
                         <li>
-                            <a id="selectMenu" href="javascript:void(0);" onclick="doAsk(userMenu);">
+                            <dl v-if="ifLogin" class="select-board board-closed">
+                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>
+                                <dd><a onclick="users.logout();">退出登录</a></dd>
+                            </dl>
+                            <a v-else id="selectMenu" href="javascript:void(0);" v-on:click="login">
                                 <i class="fa fa-user-circle resize"></i>
                                 <span class="log-btn">登录/注册</span>
 
                                 <!--<img class="header-portrait" src="<%- msg.userData.portrait %>">
                                 <span class="log-btn"></span>-->
                             </a>
-                            <dl class="select-board board-closed">
-                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>
-                                <dd><a onclick="users.logout();">退出登录</a></dd>
-                            </dl>
                         </li>
                     </ul>
 
@@ -72,21 +70,33 @@
                 </div>
 
 
+                <logPanel ref="logPanel"></logPanel>
 
 
             </div>
-
         </div>
-
     </nav>
 
 </template>
 
 <script>
+    const logPanel = () => import("./LogPanel.vue");
     export default {
         name: "navigation",
+        components : {logPanel},
         methods : {
-
+            login : function () {
+                console.log("ref",this.$refs);
+                this.$refs.logPanel.openLogPanel();
+            },
+            hello : function(){
+                console.log("hello");
+            }
+        },
+        data () {
+            return {
+                ifLogin : false
+            }
         }
     }
 </script>

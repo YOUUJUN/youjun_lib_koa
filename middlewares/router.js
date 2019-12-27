@@ -5,7 +5,7 @@ module.exports = (app) => {
 
     router.get('/',homeController.index);
 
-    router.post("/getFile",homeController.getFile);
+    router.post("/register",homeController.register);
 
 
     app.use(router.routes())

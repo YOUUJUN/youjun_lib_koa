@@ -5,6 +5,7 @@ import lib from '../../utils/lib'
 
 Vue.config.productionTip = false;
 
+Vue.prototype.$axios = lib.axios;
 
 
 new Vue({
