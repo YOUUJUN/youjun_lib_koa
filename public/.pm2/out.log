@@ -783,3 +783,328 @@ mongodb connect suucess
 mongodb connect suucess
 mongodb connect suucess
 mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 9ms 0b
+  <-- POST /register
+  --> POST /register 200 3ms 57b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+  --> POST /register 200 1ms 57b
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 10ms 0b
+  <-- POST /register
+  xxx POST /register 500 6ms -
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+users { _id: 5e09b9b8aaa5980fa41bcd4b }
+  xxx POST /register 500 11ms -
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 6ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 404 15ms -
+[0;36mMongoose:[0m users.findOne({ email: [32m'1'[39m }, { projection: {} })
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09ba192ac1fe3324a3b812"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e09948574309a4168e05284,
+  username: '',
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+value {
+  _id: 5e09ba192ac1fe3324a3b812,
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 14ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 404 22ms -
+[0;36mMongoose:[0m users.findOne({ email: [32m'1'[39m }, { projection: {} })
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09ba402c036d2fb02f801b"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value2 {
+  _id: 5e09948574309a4168e05284,
+  username: '',
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+value {
+  _id: 5e09ba402c036d2fb02f801b,
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 404 3ms -
+[0;36mMongoose:[0m users.findOne({ email: [32m'yyy'[39m }, { projection: {} })
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09ba592c036d2fb02f801c"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'yyy'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value2 null
+value {
+  _id: 5e09ba592c036d2fb02f801c,
+  nickname: '1',
+  password: '1',
+  email: 'yyy',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 10ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 12ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'1'[39m }, { projection: {} })
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 8ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 9ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m't'[39m }, { projection: {} })
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 2ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'e'[39m }, { projection: {} })
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 16ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 9ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'w'[39m }, { projection: {} })
+result null
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 9ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 10ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'null'[39m }, { projection: {} })
+result null
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 5ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'ts'[39m }, { projection: {} })
+result null
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 16ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 14ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'yu'[39m }, { projection: {} })
+result null
+true
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 12ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 10ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'null'[39m }, { projection: {} })
+result null
+true
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 2ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fr'[39m }, { projection: {} })
+result null
+true
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 13ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 13ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryh'[39m }, { projection: {} })
+result null
+true
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 15ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 11ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryht'[39m }, { projection: {} })
+result null
+false
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+users Model { user }
+  --> POST /register 200 2ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasas'[39m }, { projection: {} })
+result null
+false
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 14ms 0b
+  <-- POST /register
+users Model { user }
+emailIfExit Promise { <pending> }
+  --> POST /register 200 14ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasn'[39m }, { projection: {} })
+result null
+false
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+emailIfExit Promise { <pending> }
+  --> POST /register 200 17ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasny'[39m }, { projection: {} })
+this---------- {}
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 14ms 0b
+  <-- POST /register
+emailIfExit Promise { <pending> }
+  --> POST /register 200 9ms 61b
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyy'[39m }, { projection: {} })
+this---------- { asshole: 'ass' }
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- GET /js/home.ccfc5854.js
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 47ms 635b
+  <-- OPTIONS /register
+OPTIONS /register - 1ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb'[39m }, { projection: {} })
+emailIfExit false
+  --> POST /register 404 49ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09bfadc05b4c354cb05b2d"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'fryhtasasnyyb'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+result {
+  _id: 5e09bfadc05b4c354cb05b2d,
+  nickname: '1',
+  password: '1',
+  email: 'fryhtasasnyyb',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 7ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb'[39m }, { projection: {} })
+emailIfExit true
+  --> POST /register 200 30ms 61b
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 15ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb2'[39m }, { projection: {} })
+emailIfExit false
+  --> POST /register 404 44ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09c12d438d6f43d4fb9b5b"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'fryhtasasnyyb2'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb2'[39m }, { projection: {} })
+emailIfExit true
+  --> POST /register 200 13ms 61b
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 15ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb23'[39m }, { projection: {} })
+emailIfExit false
+  --> POST /register 404 45ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09c162f939b640442566ab"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'fryhtasasnyyb23'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+finally
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 16ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb23d'[39m }, { projection: {} })
+emailIfExit false
+  --> POST /register 404 52ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09c1fc2609b32a8c6de37b"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'fryhtasasnyyb23d'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 15ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb23dr'[39m }, { projection: {} })
+emailIfExit false
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09c3506ea72528cc4b00a3"), nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'fryhtasasnyyb23dr'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+  --> POST /register 200 70ms 38b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+[0;36mMongoose:[0m users.findOne({ email: [32m'fryhtasasnyyb23d'[39m }, { projection: {} })
+emailIfExit true
+  --> POST /register 200 11ms 61b
+mongodb connect suucess
+mongodb connect suucess

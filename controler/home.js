@@ -34,7 +34,7 @@ module.exports = {
         await next();
     },
 
-    register (ctx) {
+    register : async (ctx) => {
         let info = ctx.request.body;
 
         const registerInfo = {};
@@ -63,7 +63,23 @@ module.exports = {
             return ctx.body = msg;
         }
 
-        homeService.register(info);
+        const emailIfExit = await homeService.checkEmailExist(registerInfo.email);
+
+        if(emailIfExit === false){
+
+            await homeService.register(info).then(value => {
+                msg.status = 1;
+                msg.message = "注册成功!";
+            }).catch(err =>{
+                msg.status = 0;
+            }).finally(() => {
+                return ctx.body = msg;
+            })
+
+        }else{
+            msg.message = "注册失败! 该邮箱已被注册!";
+            return ctx.body = msg;
+        }
     }
 };
 

@@ -2,7 +2,12 @@ const Users = require("../utils/models/users");
 
 module.exports = {
 
-    register : (info) => {
+    register : async (info) => {
+
+        const msg = {
+            status : 0,
+            message : "注册失败! 未知错误，请联系管理员!"
+        };
 
         const users = new Users({
             username : info.username,
@@ -11,14 +16,19 @@ module.exports = {
             email : info.email
         });
 
-        users.save().then(value => {
-            console.log("value",value);
-        }).catch(err => {
-            console.log("err",err);
-        })
+        let result = await users.save();
+
+        return result;
     },
 
-    checkEmail (email) {
+    checkEmailExist : async (email) => {
+        const users = Users;
+        let result = await users.findOne({email:email});
+        if(result === null){
+            return false;
+        }else{
+            return true;
+        }
 
     }
 
