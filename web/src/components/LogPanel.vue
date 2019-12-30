@@ -103,7 +103,6 @@
                 registerData : {
                     nickname : '',
                     email : '',
-                    username : '',
                     password : '',
                     repassword : ''
                 },
@@ -134,44 +133,48 @@
                 console.log(this.logData);
             },
             register (){
-                // console.log(this.registerData);
-                console.log("axios",this.$axios);
 
-                this.$axios({
-                    url : "/register",
-                    method : "POST",
-                    data : this.registerData
-                })
-
-                // $.ajax({
-                //     type : 'POST',
-                //     url : '/users/register',
-                //     data : {
-                //         "nickname" : nickname,
-                //         "username" : username,
-                //         "password" : password,
-                //         "rePassword" : rePassword
-                //     },
-                //     dataType : 'JSON',
-                //     success : function (msg) {
-                //         console.log(msg);
-                //         target.querySelector('.show-msg').innerHTML = msg.message;
-                //         if(msg.msg == 0){
-                //             alert('注册失败!');
-                //         }else if(msg.msg == 1){
-                //             alert('注册成功!');
-                //         }
-                //
-                //     }
-                // })
+                if(this.registerChecker()){
+                    this.$axios({
+                        url : "/register",
+                        method : "POST",
+                        data : this.registerData
+                    }).then(value => {
+                        console.log(value);
+                        this.warn = value.data.message;
+                        if(value.data.status == 0){
+                            alert('注册失败!');
+                        }else if(value.data.status == 1){
+                            alert('注册成功!');
+                        }
+                    }).catch(err => {
+                        console.log(err);
+                    })
+                }
 
             },
             registerChecker(){
+                if(!this.registerData.nickname){
+                    this.warn = "请填写您的昵称!";
+                    return false;
+                }
+                if(!this.registerData.email){
+                    this.warn = "请输入您的邮箱!";
+                    return false;
+                }
+
+                if(!this.registerData.password){
+                    this.warn = "请输入密码!";
+                    return false;
+                }
+
                 if(this.registerData.password !== this.registerData.repassword){
                     this.warn = "俩次密码输入不相同";
-                }else{
-                    this.warn = "";
+                    return false;
                 }
+
+                this.warn = "";
+                return true;
             }
 
         }

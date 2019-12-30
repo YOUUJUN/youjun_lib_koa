@@ -266,3 +266,520 @@ body {
   --> GET /js/chunk-2d9369ba.79b91028.js 200 20ms 635b
   <-- GET /js/chunk-2d9369ba.79b91028.js
   --> GET /js/chunk-2d9369ba.79b91028.js 200 7ms 635b
+  <-- GET /
+  --> GET / 200 87ms 883b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  --> GET /js/chunk-vendors.430c8d81.js 200 11ms 115.44kb
+  --> GET /js/home.ccfc5854.js 200 25ms 3.29kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 30ms 635b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 31ms 59.28kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 5ms 635b
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 53ms 635b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 13ms 0b
+  <-- POST /register
+body undefined
+  --> POST /register 404 13ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+body undefined
+  --> POST /register 404 11ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 13ms 0b
+  <-- POST /register
+body {
+  request: {
+    method: 'POST',
+    url: '/register',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '74',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community.html',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/register',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+  --> POST /register 404 26ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 10ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 15ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+user {
+  _id: 5e0718763a9e4f41b4282d15,
+  nickname: '1',
+  password: '1',
+  email: '1'
+}
+  --> POST /register 404 28ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 13ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+user Promise { <pending> }
+  --> POST /register 404 24ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 14ms -
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 10ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 21ms -
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 5ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 15ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e095e8a3529452f2ce87476"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e095e8a3529452f2ce87476,
+  username: '',
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 6ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 25ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e0968e9c3886f244c832350"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+err MongoError: not authorized on youjun to execute command { insert: "users", documents: [ { _id: ObjectId('5e0968e9c3886f244c832350'), username: "", nickname: "1", password: "1", email: "1", __v: 0 } ], ordered: true, lsid: { id: UUID("2827bd6e-a05d-41c2-b0be-c0b31e14e151") }, $db: "youjun" }
+    at Connection.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:210:5)
+    at processMessage (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+  ok: 0,
+  errmsg: `not authorized on youjun to execute command { insert: "users", documents: [ { _id: ObjectId('5e0968e9c3886f244c832350'), username: "", nickname: "1", password: "1", email: "1", __v: 0 } ], ordered: true, lsid: { id: UUID("2827bd6e-a05d-41c2-b0be-c0b31e14e151") }, $db: "youjun" }`,
+  code: 13,
+  codeName: 'Unauthorized',
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 3ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e096ab4c3886f244c832351"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+err MongoError: command insert requires authentication
+    at Connection.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:210:5)
+    at processMessage (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+  ok: 0,
+  errmsg: 'command insert requires authentication',
+  code: 13,
+  codeName: 'Unauthorized',
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 5ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e096ac1c3886f244c832352"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+err MongoError: command insert requires authentication
+    at Connection.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:210:5)
+    at processMessage (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+  ok: 0,
+  errmsg: 'command insert requires authentication',
+  code: 13,
+  codeName: 'Unauthorized',
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 2ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e096acac3886f244c832353"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+err MongoError: command insert requires authentication
+    at Connection.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\pool.js:466:61)
+    at Connection.emit (events.js:210:5)
+    at processMessage (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (F:\youjun_lib_koa\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23) {
+  ok: 0,
+  errmsg: 'command insert requires authentication',
+  code: 13,
+  codeName: 'Unauthorized',
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+body {
+  nickname: '1',
+  email: '1',
+  username: '',
+  password: '1',
+  repassword: '1'
+}
+  --> POST /register 404 20ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e09948574309a4168e05284"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m'1'[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e09948574309a4168e05284,
+  username: '',
+  nickname: '1',
+  password: '1',
+  email: '1',
+  __v: 0
+}
+mongodb connect suucess
+  <-- GET /js/chunk-vendors.430c8d81.js
+  <-- GET /js/home.ccfc5854.js
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  <-- GET /favicon.ico
+  -x- GET /favicon.ico 200 6ms 59.28kb
+  <-- GET /js/chunk-2d9369ba.79b91028.js
+  --> GET /js/chunk-2d9369ba.79b91028.js 200 23ms 635b
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 8ms 0b
+  <-- POST /register
+  --> POST /register 404 14ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099a2e3a2e5b3d20022922"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m''[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099a2e3a2e5b3d20022922,
+  username: '',
+  nickname: '1',
+  password: '',
+  email: '1',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 9ms 0b
+  <-- POST /register
+  --> POST /register 404 16ms -
+mongodb connect suucess
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099a5a9ff29640e8a58a75"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099a5a9ff29640e8a58a75,
+  username: '',
+  nickname: '1',
+  password: '',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 10ms 0b
+  <-- POST /register
+  --> POST /register 404 18ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099bcb058c6d274c664c14"), username: [32m''[39m, nickname: [32m'1'[39m, password: [32m''[39m, email: [32m'1'[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099bcb058c6d274c664c14,
+  username: '',
+  nickname: '1',
+  password: '',
+  email: '1',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+  --> POST /register 404 1ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099bd4058c6d274c664c15"), username: [32m''[39m, nickname: [32m''[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099bd4058c6d274c664c15,
+  username: '',
+  nickname: '',
+  password: '',
+  email: '',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 1ms
+  --> OPTIONS /register 200 7ms 0b
+  <-- POST /register
+  --> POST /register 404 11ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099be3cd418735c051d09a"), username: [32m''[39m, nickname: [32m''[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099be3cd418735c051d09a,
+  username: '',
+  nickname: '',
+  password: '',
+  email: '',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 5ms 0b
+  <-- POST /register
+  --> POST /register 404 14ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c2cee1d284360951b34"), username: [32m''[39m, nickname: [32m''[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c2cee1d284360951b34,
+  username: '',
+  nickname: '',
+  password: '',
+  email: '',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+  --> POST /register 404 2ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c2eee1d284360951b35"), username: [32m''[39m, nickname: [32m''[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c2eee1d284360951b35,
+  username: '',
+  nickname: '',
+  password: '',
+  email: '',
+  __v: 0
+}
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 9ms 0b
+  <-- POST /register
+  --> POST /register 404 19ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c5583c5362560445d7f"), username: [32m''[39m, nickname: [32m''[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c5583c5362560445d7f,
+  username: '',
+  nickname: '',
+  password: '',
+  email: '',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+  --> POST /register 404 3ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c5883c5362560445d80"), username: [32m''[39m, nickname: [32m'qw'[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c5883c5362560445d80,
+  username: '',
+  nickname: 'qw',
+  password: '',
+  email: '',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 1ms 0b
+  <-- POST /register
+  --> POST /register 404 2ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c5983c5362560445d81"), username: [32m''[39m, nickname: [32m'qw'[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c5983c5362560445d81,
+  username: '',
+  nickname: 'qw',
+  password: '',
+  email: '',
+  __v: 0
+}
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+  --> POST /register 404 1ms -
+[0;36mMongoose:[0m users.insertOne({ _id: ObjectId("5e099c5a83c5362560445d82"), username: [32m''[39m, nickname: [32m'qw'[39m, password: [32m''[39m, email: [32m''[39m, __v: [33m0[39m}, { session: [1mnull[22m })
+value {
+  _id: 5e099c5a83c5362560445d82,
+  username: '',
+  nickname: 'qw',
+  password: '',
+  email: '',
+  __v: 0
+}
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 11ms 0b
+  <-- POST /register
+  --> POST /register 200 12ms 40b
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 13ms 0b
+  <-- POST /register
+  --> POST /register 200 8ms 57b
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess
+mongodb connect suucess

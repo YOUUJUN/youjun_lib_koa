@@ -8,6 +8,8 @@ module.exports = (app) => {
     router.post("/register",homeController.register);
 
 
+
+
     app.use(router.routes())
         .use(router.allowedMethods());
 };

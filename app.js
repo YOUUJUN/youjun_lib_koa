@@ -9,6 +9,8 @@ const cors = require('koa-cors');
 const router = require('./middlewares/router');
 const history = require('koa2-history-api-fallback');
 
+const mongoConf = require("./mongo.config");
+mongoConf.connect();
 
 // error handler
 // onerror(app);

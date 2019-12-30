@@ -7,6 +7,9 @@ const fsPromises = require('fs').promises;
 const util = require("util");
 // const execFile = util.promisify(require("child_process").execFile);
 
+const homeService = require('../service/home');
+var uuid = require('uuid');
+
 module.exports = {
     index : async (ctx,next) =>{
         // const username = ctx.cookies.get("username");
@@ -31,13 +34,51 @@ module.exports = {
         await next();
     },
 
-    // register (ctx) {
-    //     console.log("body",ctx);
-    //     // ctx.body = ctx;
-    // }
+    register (ctx) {
+        let info = ctx.request.body;
 
-    register : async(ctx,next) => {
-        console.log("body",ctx);
-        ctx.body = ctx;
+        const registerInfo = {};
+        const msg = {
+            status : 0,
+            message : "注册失败! 未知错误，请联系管理员!"
+        };
+
+        registerInfo.nickname = info.nickname;
+        registerInfo.email = info.email;
+        registerInfo.password = info.password;
+        registerInfo.username = uuid.v1();
+
+        if(!registerInfo.nickname){
+            msg.message = "注册失败! 昵称不能为空";
+            return ctx.body = msg;
+        }
+
+        if(!registerInfo.email){
+            msg.message = "注册失败! 邮箱不能为空";
+            return ctx.body = msg;
+        }
+
+        if(!registerInfo.password){
+            msg.message = "注册失败! 密码不能为空";
+            return ctx.body = msg;
+        }
+
+        homeService.register(info);
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
