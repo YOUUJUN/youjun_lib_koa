@@ -358,42 +358,6 @@
 
 
 
-
-    @media screen and (max-width:768px){
-
-        #hamburger{
-            display: block;
-        }
-
-
-        #main-menu{
-            width:100%;
-            margin:0;
-        }
-
-        .menu li{
-            display:block;
-        }
-
-        .logo{
-            overflow: hidden;
-        }
-
-        .main-navigation {
-            margin: 0;
-        }
-
-        .icon{
-            margin-top:15px;
-        }
-
-        .reWidth{
-            width: auto;
-        }
-
-    }
-
-
 </style>
 
 <script>

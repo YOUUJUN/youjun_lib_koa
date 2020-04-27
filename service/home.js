@@ -6,6 +6,7 @@ module.exports = {
 
         const msg = {
             status : 0,
+
             message : "注册失败! 未知错误，请联系管理员!"
         };
 
@@ -29,6 +30,9 @@ module.exports = {
         }else{
             return true;
         }
+    },
+
+    checkUserPass : async (username, password) => {
 
     }
 

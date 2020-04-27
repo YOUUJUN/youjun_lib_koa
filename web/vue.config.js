@@ -70,7 +70,10 @@ const buildPageSync = () => {
 let obj = {
     publicPath : '/',
     outputDir : './../vue-dist',
-    pages : buildPageSync()
+    pages : buildPageSync(),
+    devServer : {
+        port : 8090
+    }
 };
 
 

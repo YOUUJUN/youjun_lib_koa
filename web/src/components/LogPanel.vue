@@ -130,7 +130,23 @@
                 this.registerShow = !this.registerShow;
             },
             login () {
-                console.log(this.logData);
+                if(this.loginChecker()){
+                    this.$axios({
+                        url : "/login",
+                        method : "POST",
+                        data : this.logData
+                    }).then(value => {
+                        console.log(value);
+                        this.warn = value.data.message;
+                        if(value.data.status == 0){
+                            alert('登录失败!');
+                        }else if(value.data.status == 1){
+                            alert('登录成功!');
+                        }
+                    }).catch(err => {
+                        console.log(err);
+                    })
+                }
             },
             register (){
 
@@ -175,6 +191,17 @@
 
                 this.warn = "";
                 return true;
+            },
+            loginChecker(){
+                if(!this.logData.username){
+                    this.warn = "请输入您的邮箱或用户名!";
+                    return false;
+                }
+
+                if(!this.logData.password){
+                    this.warn = "请输入密码!";
+                    return false;
+                }
             }
 
         }

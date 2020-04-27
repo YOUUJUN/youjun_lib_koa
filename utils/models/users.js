@@ -16,10 +16,17 @@ const userSchema = new Schema({
     },
     password : {
         type : String,
-        require : false
+        require : true
+    },
+    registerDate : {
+        type : Date
+    },
+    lastLoginDate : {
+        type : Date
     }
 });
 
-const user = mongoose.model("user",userSchema);
 
-module.exports = user;
+const users = mongoose.model("users",userSchema,"users");
+
+module.exports = users;

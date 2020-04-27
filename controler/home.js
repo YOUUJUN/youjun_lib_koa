@@ -1,6 +1,4 @@
 const router = require('koa-router')();
-const git = require("./../utils/git_function/git_tools");
-const workspaces = require("./../utils/workspace_manager/workspace");
 
 const fsPromises = require('fs').promises;
 
@@ -12,19 +10,6 @@ var uuid = require('uuid');
 
 module.exports = {
     index : async (ctx,next) =>{
-        // const username = ctx.cookies.get("username");
-        //
-        // const ifExist = await workspaces.checkWorkSpaceByUser(username);
-        //
-        //
-        // if(!ifExist){
-        //     let workName = workspaces.workspaceNameGenerator(username);
-        //     let userPath = await workspaces.createWorkSpace("F:\\learn_git_koa\\public\\source",workName);
-        // }
-        //
-
-        // await next();
-
         let requestBody = ctx.request.ip;
         let responseBody = ctx.response;
         let nodeRequestBody = ctx.req;
@@ -63,6 +48,7 @@ module.exports = {
             return ctx.body = msg;
         }
 
+        //检测邮箱是否存在
         const emailIfExit = await homeService.checkEmailExist(registerInfo.email);
 
         if(emailIfExit === false){
@@ -80,6 +66,18 @@ module.exports = {
             msg.message = "注册失败! 该邮箱已被注册!";
             return ctx.body = msg;
         }
+    },
+
+
+    login : async (ctx) => {
+        let info = ctx.request.body;
+
+        const logInfo = {
+            username : info.username,
+            password : info.password
+        }
+
+
     }
 };
 
